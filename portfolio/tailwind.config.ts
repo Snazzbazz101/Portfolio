@@ -1,3 +1,4 @@
+{/*ran `npm install mini-svg-data-uri`, `npm install tailwindcss-animate`*/ }
 import type { Config } from "tailwindcss";
 
 const svgToDataUri = require("mini-svg-data-uri");
