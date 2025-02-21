@@ -2,6 +2,8 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import ShimmerButton from './ui/shimmerButton';
+import { FaLocationArrow } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -13,7 +15,7 @@ const Hero = () => {
             <Spotlight className='-top-28 -left-80 h-[80vh] w-[50vw]' fill="blue"/>
         </div>
         {/*grid container*/}
-        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0"/>
+        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.04] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0"/>
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
         
         {/*text container*/}
@@ -25,12 +27,15 @@ const Hero = () => {
                 {/*text appearing effect*/}
                 <TextGenerateEffect
                     className="text-center text-[40px] md:text-5xl lg:text-6xl"
-                    words = "My Interactive Resume"
+                    words = "Hi I&apos;m Daniel"
                 />
 
                 <p className="text-center md:tracking-wider mb-4 text-small md:text-lg lg:text-2xl">
-                    Hi I&apos;m Daniel, a computer science major at Simon Fraser University. 
+                    A Computer Science Major at Simon Fraser University
                 </p>
+                <a href="#about">
+                <ShimmerButton title="View My Work" icon={<FaLocationArrow />} position="right" otherClasses=''/>
+                </a>
 
             </div>
         </div>
