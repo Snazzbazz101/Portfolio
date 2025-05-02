@@ -33,7 +33,7 @@ const Hero = () => {
                 <p className="text-center md:tracking-wider mb-4 text-small md:text-lg lg:text-2xl">
                     A Computer Science Major at Simon Fraser University
                 </p>
-                <a href="#about">
+                <a href="#projects">
                 <ShimmerButton title="View My Work" 
                 icon={<FaLocationArrow />} 
                 position="right" 
